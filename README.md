@@ -28,6 +28,8 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
+_*Acceleration data ('Acc' named variables) is represented in standard gravity units 'g', while the angular velocity measurements ('Gyro' variables) are in units of radians / second.*_
+
 * tBodyAcc-XYZ
 * tGravityAcc-XYZ
 * tBodyAccJerk-XYZ
