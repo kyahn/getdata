@@ -32,6 +32,6 @@ data2 <- rename(data2, c("V2" = "Activity"))
 data3 <- subset(data2,select = -c(1))
 # Create a second, independent tidy data set
 # with the average of each variable for each activity and each subject
-data4 <- ddply(data3,.(Subject,V2),colwise(mean))
+data4 <- ddply(data3,.(Subject,Activity),colwise(mean))
 # push output to a file...
 write.table(data4,"./fit/Project.txt", row.name=FALSE)
