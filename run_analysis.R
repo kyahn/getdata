@@ -2,6 +2,7 @@
 #
 library(plyr)
 
+if(!file.exists("./fit")){dir.create("./fit")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl, "./fit/dataset.zip")
 unzip("./fit/dataset.zip", exdir="./fit")
